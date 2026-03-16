@@ -1,0 +1,36 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF"/>
+      <stop offset="100%" style="stop-color:#7B2CFF"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9500"/>
+      <stop offset="100%" style="stop-color:#FFB800"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 图形部分 -->
+  <g transform="translate(20, 20)">
+    <!-- 背景圆形 -->
+    <circle cx="40" cy="40" r="38" fill="#0A0E27"/>
+    
+    <!-- 外环 -->
+    <circle cx="40" cy="40" r="36" stroke="url(#brandGrad)" stroke-width="2.5" fill="none"/>
+    
+    <!-- 代码符号 -->
+    <path d="M 26 30 L 18 40 L 26 50" stroke="url(#brandGrad)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 54 30 L 62 40 L 54 50" stroke="url(#brandGrad)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- AI 大脑 -->
+    <path d="M 40 26 L 48 31 L 48 39 L 40 44 L 32 39 L 32 31 Z" fill="url(#brandGrad)" opacity="0.95"/>
+    
+    <!-- 能量粒子 -->
+    <circle cx="58" cy="22" r="4" fill="url(#warmGrad)" opacity="0.9"/>
+    <circle cx="18" cy="58" r="3" fill="url(#warmGrad)" opacity="0.7"/>
+  </g>
+  
+  <!-- 文字部分 -->
+  <text x="95" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#brandGrad)">AICodeMate</text>
+  <text x="95" y="78" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0" letter-spacing="1">智码伙伴 · 编程未来</text>
+</svg>

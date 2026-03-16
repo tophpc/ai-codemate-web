@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AICodeMate 品牌色彩系统</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #0A0E27 0%, #1A1A2E 100%);
+      color: #F5F7FA;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #0066FF 0%, #7B2CFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .subtitle {
+      font-size: 20px;
+      color: #A0AEC0;
+      margin-bottom: 60px;
+    }
+    
+    .section {
+      margin-bottom: 60px;
+    }
+    
+    .section-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #F5F7FA;
+    }
+    
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    
+    .color-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .color-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 102, 255, 0.3);
+    }
+    
+    .color-preview {
+      height: 160px;
+      width: 100%;
+    }
+    
+    .color-info {
+      padding: 20px;
+    }
+    
+    .color-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #F5F7FA;
+    }
+    
+    .color-value {
+      font-size: 14px;
+      color: #A0AEC0;
+      font-family: "JetBrains Mono", monospace;
+      margin-bottom: 4px;
+    }
+    
+    .color-usage {
+      font-size: 13px;
+      color: #718096;
+      line-height: 1.5;
+    }
+    
+    .gradient-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    
+    .gradient-card {
+      border-radius: 16px;
+      overflow: hidden;
+      height: 200px;
+      position: relative;
+    }
+    
+    .gradient-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+    }
+    
+    .footer {
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      color: #A0AEC0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AICodeMate 品牌色彩系统</h1>
+    <p class="subtitle">科技与温暖融合 · 专业与友好共融</p>
+    
+    <!-- 主色系 -->
+    <div class="section">
+      <h2 class="section-title">🎨 主色系</h2>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-preview" style="background: #0066FF;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Brand Blue</h3>
+            <p class="color-value">#0066FF</p>
+            <p class="color-usage">主色、按钮、链接、品牌展示</p>
+          </div>
+        </div>
+        
+        <div class="color-card">
+          <div class="color-preview" style="background: #7B2CFF;"></div>
+          <div class="color-info">
+            <h3 class="color-name">AI Purple</h3>
+            <p class="color-value">#7B2CFF</p>
+            <p class="color-usage">辅助色、渐变、科技感元素</p>
+          </div>
+        </div>
+        
+        <div class="color-card">
+          <div class="color-preview" style="background: #FF9500;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Energy Orange</h3>
+            <p class="color-value">#FF9500</p>
+            <p class="color-usage">强调色、高亮、温暖元素</p>
+          </div>
+        </div>
+        
+        <div class="color-card">
+          <div class="color-preview" style="background: #FFB800;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Warm Amber</h3>
+            <p class="color-value">#FFB800</p>
+            <p class="color-usage">温暖强调、友好元素</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 渐变色系统 -->
+    <div class="section">
+      <h2 class="section-title">🌈 渐变色系统</h2>
+      <div class="gradient-grid">
+        <div class="gradient-card" style="background: linear-gradient(135deg, #0066FF 0%, #7B2CFF 100%);">
+          <div class="gradient-info">
+            <h3 class="color-name">品牌渐变</h3>
+            <p class="color-value">#0066FF → #7B2CFF</p>
+          </div>
+        </div>
+        
+        <div class="gradient-card" style="background: linear-gradient(135deg, #FF9500 0%, #FFB800 100%);">
+          <div class="gradient-info">
+            <h3 class="color-name">温暖渐变</h3>
+            <p class="color-value">#FF9500 → #FFB800</p>
+          </div>
+        </div>
+        
+        <div class="gradient-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+          <div class="gradient-info">
+            <h3 class="color-name">Hero 渐变</h3>
+            <p class="color-value">#667eea → #764ba2</p>
+          </div>
+        </div>
+        
+        <div class="gradient-card" style="background: linear-gradient(135deg, #FF9500 0%, #FF6B35 100%);">
+          <div class="gradient-info">
+            <h3 class="color-name">强调渐变</h3>
+            <p class="color-value">#FF9500 → #FF6B35</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 中性色系统 -->
+    <div class="section">
+      <h2 class="section-title">⚫ 中性色系统</h2>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-preview" style="background: #0A0E27;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Deep Space</h3>
+            <p class="color-value">#0A0E27</p>
+            <p class="color-usage">主背景（深色模式）</p>
+          </div>
+        </div>
+        
+        <div class="color-card">
+          <div class="color-preview" style="background: #1A1A2E;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Code Dark</h3>
+            <p class="color-value">#1A1A2E</p>
+            <p class="color-usage">卡片背景、次要背景</p>
+          </div>
+        </div>
+        
+        <div class="color-card">
+          <div class="color-preview" style="background: #F5F7FA;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Text Light</h3>
+            <p class="color-value">#F5F7FA</p>
+            <p class="color-usage">主要文字（深色背景）</p>
+          </div>
+        </div>
+        
+        <div class="color-card">
+          <div class="color-preview" style="background: #A0AEC0;"></div>
+          <div class="color-info">
+            <h3 class="color-name">Text Gray</h3>
+            <p class="color-value">#A0AEC0</p>
+            <p class="color-usage">次要文字、描述文字</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>AICodeMate 品牌 VI 系统 v2.0</p>
+      <p style="margin-top: 8px;">智码伙伴 · 编程未来</p>
+    </div>
+  </div>
+</body>
+</html>

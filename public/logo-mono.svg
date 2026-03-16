@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E2E8F0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#0A0E27"/>
+  
+  <!-- 外环 -->
+  <circle cx="100" cy="100" r="85" stroke="url(#monoGrad)" stroke-width="3" fill="none"/>
+  
+  <!-- 代码符号 -->
+  <path d="M 65 75 L 45 100 L 65 125" stroke="url(#monoGrad)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 135 75 L 155 100 L 135 125" stroke="url(#monoGrad)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- AI 大脑 -->
+  <path d="M 100 65 L 120 78 L 120 102 L 100 115 L 80 102 L 80 78 Z" fill="url(#monoGrad)" opacity="0.95"/>
+  
+  <!-- 能量粒子 -->
+  <circle cx="145" cy="55" r="6" fill="url(#monoGrad)" opacity="0.8"/>
+  <circle cx="45" cy="145" r="5" fill="url(#monoGrad)" opacity="0.6"/>
+</svg>
