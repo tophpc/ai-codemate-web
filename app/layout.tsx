@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "旺财 AI 学习知识库 - 软件研发团队 AI 学习与实战指南",
-  description: "面向全球医疗软件 AI 开发者，从入门到实战，全面提升 AI 编程能力",
+  title: "AICodeMate - 智码伙伴，编程未来",
+  description: "让每个开发者都拥有 AI 超能力 - 面向全球医疗软件 AI 开发者，从入门到实战",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
