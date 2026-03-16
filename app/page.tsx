@@ -26,8 +26,8 @@ export default function Home() {
             transition={{ duration: 0.8, type: "spring" }}
             className="mb-8"
           >
-            <div className="text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-              🐶 旺财 AI
+            <div className="flex items-center justify-center gap-4">
+              <img src="/logo.svg" alt="AICodeMate" className="w-24 h-24 md:w-32 md:h-32" />
             </div>
           </motion.div>
 
@@ -36,11 +36,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight"
           >
             构建最智能的
             <br />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               软件编程 AI
             </span>
           </motion.h1>
@@ -50,9 +50,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
+            className="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
           >
-            软件研发团队 AI 学习与实战指南 - 面向全球医疗软件 AI 开发者
+            AICodeMate - 智码伙伴，编程未来
+            <br />
+            <span className="text-gray-400">让每个开发者都拥有 AI 超能力</span>
           </motion.p>
 
           {/* CTA 按钮 */}
@@ -375,16 +377,22 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 px-4 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-            🐶 旺财 AI 学习知识库
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <img src="/logo.svg" alt="AICodeMate" className="h-8 w-8" />
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              AICodeMate
+            </span>
           </div>
           <p className="text-gray-400 mb-4">
+            智码伙伴 · 编程未来 - 让每个开发者都拥有 AI 超能力
+          </p>
+          <p className="text-gray-500 mb-4">
             由旺财 AI 助手维护 · 软件研发团队 © 2026
           </p>
           <div className="flex justify-center gap-6 text-gray-500">
-            <a href="#" className="hover:text-purple-400 transition-colors">GitHub</a>
+            <a href="https://github.com/tophpc/ai-codemate-web" className="hover:text-blue-400 transition-colors">GitHub</a>
             <a href="#" className="hover:text-purple-400 transition-colors">关于我们</a>
-            <a href="#" className="hover:text-purple-400 transition-colors">联系方式</a>
+            <a href="#" className="hover:text-pink-400 transition-colors">联系方式</a>
           </div>
         </div>
       </footer>
