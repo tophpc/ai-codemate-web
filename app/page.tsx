@@ -156,6 +156,13 @@ export default function Home() {
                 desc: "追踪最新 AI 编程动态和工具",
                 color: "from-orange-500 to-pink-500",
               },
+              {
+                icon: "🎨",
+                title: "品牌展示",
+                desc: "AICodeMate 品牌 VI 系统展示",
+                color: "from-purple-500 to-blue-500",
+                link: "/brand-showcase.html",
+              },
             ].map((item, index) => (
               <motion.div
                 key={index}
