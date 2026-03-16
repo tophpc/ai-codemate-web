@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "ai-codemate-web",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/brand-showcase.html",
+      "dest": "/brand-showcase.html"
+    },
+    {
+      "src": "/color-system.html",
+      "dest": "/color-system.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
