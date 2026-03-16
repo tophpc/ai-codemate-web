@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AICodeMate 品牌展示中心</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #0A0E27 0%, #1A1A2E 100%);
+      color: #F5F7FA;
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    
+    h1 {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #0066FF 0%, #7B2CFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .subtitle {
+      font-size: 28px;
+      color: #A0AEC0;
+      margin-bottom: 8px;
+    }
+    
+    .tagline {
+      font-size: 18px;
+      color: #718096;
+      letter-spacing: 2px;
+    }
+    
+    .section {
+      margin-bottom: 80px;
+    }
+    
+    .section-title {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #F5F7FA;
+      text-align: center;
+    }
+    
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    
+    .logo-card {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 24px;
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .logo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 102, 255, 0.2);
+      border-color: rgba(0, 102, 255, 0.3);
+    }
+    
+    .logo-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+    }
+    
+    .logo-name {
+      font-size: 20px;
+      font-weight: 600;
+      color: #F5F7FA;
+      margin-bottom: 8px;
+    }
+    
+    .logo-desc {
+      font-size: 14px;
+      color: #A0AEC0;
+      line-height: 1.6;
+    }
+    
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    
+    .poster-card {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .poster-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 102, 255, 0.2);
+    }
+    
+    .poster-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .poster-info {
+      padding: 30px;
+    }
+    
+    .poster-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #F5F7FA;
+      margin-bottom: 12px;
+    }
+    
+    .poster-desc {
+      font-size: 15px;
+      color: #A0AEC0;
+      line-height: 1.8;
+    }
+    
+    .values-section {
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 24px;
+      padding: 60px 40px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .value-card {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .value-card:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(0, 102, 255, 0.2);
+    }
+    
+    .value-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    
+    .value-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #F5F7FA;
+      margin-bottom: 12px;
+    }
+    
+    .value-desc {
+      font-size: 15px;
+      color: #A0AEC0;
+      line-height: 1.6;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 100px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #718096;
+    }
+    
+    .footer-logo {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #0066FF 0%, #7B2CFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+    }
+    
+    .footer-tagline {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    
+    .footer-copyright {
+      font-size: 14px;
+      color: #718096;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 42px;
+      }
+      
+      .subtitle {
+        font-size: 20px;
+      }
+      
+      .poster-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AICodeMate</h1>
+      <p class="subtitle">智码伙伴 · 编程未来</p>
+      <p class="tagline">YOUR AI PROGRAMMING PARTNER</p>
+    </header>
+    
+    <!-- Logo 系统展示 -->
+    <section class="section">
+      <h2 class="section-title">🎨 Logo 系统</h2>
+      <div class="logo-grid">
+        <div class="logo-card">
+          <img src="/logo-full.svg" alt="AICodeMate 主 Logo">
+          <h3 class="logo-name">主 Logo（完整版）</h3>
+          <p class="logo-desc">图形 + 文字组合，适合官方文档、宣传材料等正式场合</p>
+        </div>
+        
+        <div class="logo-card">
+          <img src="/logo.svg" alt="AICodeMate 品牌 Logo">
+          <h3 class="logo-name">品牌 Logo（简化版）</h3>
+          <p class="logo-desc">导航栏、社交媒体等中等尺寸展示场景</p>
+        </div>
+        
+        <div class="logo-card">
+          <img src="/logo-mono.svg" alt="AICodeMate 单色 Logo" style="background: #0A0E27; border-radius: 12px; padding: 20px;">
+          <h3 class="logo-name">单色版本</h3>
+          <p class="logo-desc">深色/浅色背景、单色印刷等特殊场景</p>
+        </div>
+        
+        <div class="logo-card">
+          <img src="/favicon.svg" alt="AICodeMate Favicon">
+          <h3 class="logo-name">Favicon</h3>
+          <p class="logo-desc">浏览器标签页、书签、移动端主屏幕图标</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 品牌海报展示 -->
+    <section class="section">
+      <h2 class="section-title">📊 品牌海报</h2>
+      <div class="poster-grid">
+        <div class="poster-card">
+          <img src="/og-image.svg" alt="AICodeMate 品牌分享图">
+          <div class="poster-info">
+            <h3 class="poster-title">品牌分享图</h3>
+            <p class="poster-desc">社交媒体分享、Open Graph 预览图，展示品牌核心价值：陪伴、未来、智慧</p>
+          </div>
+        </div>
+        
+        <div class="poster-card">
+          <img src="/vision-poster.svg" alt="AICodeMate 愿景海报">
+          <div class="poster-info">
+            <h3 class="poster-title">愿景海报</h3>
+            <p class="poster-desc">展示 AICodeMate 对未来 AI 编程的展望：AI 超能力普及、人机协作、全球社区、效率革命</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 应用场景展示 -->
+    <section class="section">
+      <h2 class="section-title">🚀 应用场景</h2>
+      <div class="poster-card" style="margin-bottom: 40px;">
+        <img src="/scenes-poster.svg" alt="AICodeMate 应用场景">
+        <div class="poster-info">
+          <h3 class="poster-title">全方位应用场景</h3>
+          <p class="poster-desc">智能代码编写、代码审查、个性化学习、医疗 AI 开发、嵌入式 AI 部署 - 覆盖开发全流程</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 色彩系统 -->
+    <section class="section">
+      <h2 class="section-title">🌈 色彩系统</h2>
+      <div class="values-section">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🔵</div>
+            <h3 class="value-title">Brand Blue</h3>
+            <p class="value-desc">#0066FF<br>主色、按钮、链接</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">🟣</div>
+            <h3 class="value-title">AI Purple</h3>
+            <p class="value-desc">#7B2CFF<br>辅助色、渐变</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">🟠</div>
+            <h3 class="value-title">Energy Orange</h3>
+            <p class="value-desc">#FF9500<br>强调色、高亮</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">⚫</div>
+            <h3 class="value-title">Deep Space</h3>
+            <p class="value-desc">#0A0E27<br>深色背景</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 核心价值观 -->
+    <section class="section">
+      <h2 class="section-title">💎 核心价值观</h2>
+      <div class="values-section">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">陪伴</h3>
+            <p class="value-desc">做开发者的 AI 伙伴，不是替代，而是增强</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">🚀</div>
+            <h3 class="value-title">未来</h3>
+            <p class="value-desc">引领 AI 编程新时代，共创智能未来</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">💡</div>
+            <h3 class="value-title">智慧</h3>
+            <p class="value-desc">让编程更智能、更高效、更简单</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3 class="value-title">开放</h3>
+            <p class="value-desc">面向全球开发者，构建开放协作生态</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="footer-logo">AICodeMate</div>
+      <p class="footer-tagline">智码伙伴 · 编程未来</p>
+      <p class="footer-copyright">一起，让编程更美好 · Together, Make Programming Better</p>
+      <p class="footer-copyright" style="margin-top: 20px;">© 2026 AICodeMate. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

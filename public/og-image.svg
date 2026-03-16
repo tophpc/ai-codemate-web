@@ -1,0 +1,93 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E27"/>
+      <stop offset="50%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#2D1B4E"/>
+    </linearGradient>
+    
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF"/>
+      <stop offset="100%" style="stop-color:#7B2CFF"/>
+    </linearGradient>
+    
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9500"/>
+      <stop offset="100%" style="stop-color:#FFB800"/>
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- 装饰性圆形 -->
+  <circle cx="100" cy="100" r="200" fill="url(#brandGrad)" opacity="0.1" filter="url(#glow)"/>
+  <circle cx="1100" cy="530" r="300" fill="url(#warmGrad)" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="600" cy="315" r="400" fill="url(#brandGrad)" opacity="0.05" filter="url(#glow)"/>
+  
+  <!-- 网格线 -->
+  <g stroke="rgba(0, 102, 255, 0.1)" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+  </g>
+  
+  <!-- 主 Logo -->
+  <g transform="translate(520, 180)">
+    <circle cx="80" cy="80" r="75" fill="#0A0E27" stroke="url(#brandGrad)" stroke-width="3"/>
+    <path d="M 52 60 L 36 80 L 52 100" stroke="url(#brandGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 108 60 L 124 80 L 108 100" stroke="url(#brandGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 80 52 L 96 63 L 96 83 L 80 94 L 64 83 L 64 63 Z" fill="url(#brandGrad)" opacity="0.9"/>
+    <circle cx="116" cy="44" r="8" fill="url(#warmGrad)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- 主标题 -->
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#brandGrad)" text-anchor="middle" filter="url(#glow)">AICodeMate</text>
+  
+  <!-- 中文标语 -->
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="32" fill="#F5F7FA" text-anchor="middle" letter-spacing="8">智码伙伴 · 编程未来</text>
+  
+  <!-- 英文标语 -->
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="20" fill="#A0AEC0" text-anchor="middle" letter-spacing="2">Your AI Programming Partner</text>
+  
+  <!-- 价值主张 -->
+  <g transform="translate(100, 460)">
+    <rect width="300" height="120" fill="rgba(255,255,255,0.05)" rx="16" stroke="rgba(0,102,255,0.2)" stroke-width="1"/>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#F5F7FA" text-anchor="middle">🤝 陪伴</text>
+    <text x="150" y="75" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">做开发者的 AI 伙伴</text>
+  </g>
+  
+  <g transform="translate(450, 460)">
+    <rect width="300" height="120" fill="rgba(255,255,255,0.05)" rx="16" stroke="rgba(123,44,255,0.2)" stroke-width="1"/>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#F5F7FA" text-anchor="middle">🚀 未来</text>
+    <text x="150" y="75" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">引领 AI 编程新时代</text>
+  </g>
+  
+  <g transform="translate(800, 460)">
+    <rect width="300" height="120" fill="rgba(255,255,255,0.05)" rx="16" stroke="rgba(255,149,0,0.2)" stroke-width="1"/>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#F5F7FA" text-anchor="middle">💡 智慧</text>
+    <text x="150" y="75" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">让编程更智能高效</text>
+  </g>
+  
+  <!-- 底部装饰 -->
+  <line x1="200" y1="600" x2="1000" y2="600" stroke="url(#brandGrad)" stroke-width="2" opacity="0.3"/>
+  <circle cx="200" cy="600" r="4" fill="url(#brandGrad)"/>
+  <circle cx="600" cy="600" r="4" fill="url(#warmGrad)"/>
+  <circle cx="1000" cy="600" r="4" fill="url(#brandGrad)"/>
+</svg>

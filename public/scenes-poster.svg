@@ -1,0 +1,91 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sceneBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E27"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+    
+    <linearGradient id="sceneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF"/>
+      <stop offset="100%" style="stop-color:#7B2CFF"/>
+    </linearGradient>
+    
+    <filter id="sceneGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="800" fill="url(#sceneBg)"/>
+  
+  <!-- 顶部标题 -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#sceneGrad)" text-anchor="middle" filter="url(#sceneGlow)">AICodeMate 应用场景</text>
+  <text x="600" y="115" font-family="Arial, sans-serif" font-size="20" fill="#A0AEC0" text-anchor="middle" letter-spacing="2">AI 编程助手的全方位应用</text>
+  
+  <!-- 场景 1: 代码编写 -->
+  <g transform="translate(80, 160)">
+    <rect width="320" height="280" fill="rgba(255,255,255,0.03)" rx="20" stroke="rgba(0,102,255,0.2)" stroke-width="1.5"/>
+    <circle cx="160" cy="60" r="35" fill="url(#sceneGrad)" opacity="0.15"/>
+    <text x="160" y="75" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">💻</text>
+    <text x="160" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#F5F7FA" text-anchor="middle">智能代码编写</text>
+    <text x="160" y="155" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">AI 实时补全代码</text>
+    <text x="160" y="180" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">自动生成单元测试</text>
+    <text x="160" y="205" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">代码重构建议</text>
+    <text x="160" y="240" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">提升开发效率 40%+</text>
+  </g>
+  
+  <!-- 场景 2: 代码审查 -->
+  <g transform="translate(440, 160)">
+    <rect width="320" height="280" fill="rgba(255,255,255,0.03)" rx="20" stroke="rgba(123,44,255,0.2)" stroke-width="1.5"/>
+    <circle cx="160" cy="60" r="35" fill="url(#sceneGrad)" opacity="0.15"/>
+    <text x="160" y="75" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">🔍</text>
+    <text x="160" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#F5F7FA" text-anchor="middle">智能代码审查</text>
+    <text x="160" y="155" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">自动检测代码问题</text>
+    <text x="160" y="180" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">安全漏洞扫描</text>
+    <text x="160" y="205" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">最佳实践建议</text>
+    <text x="160" y="240" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">提升代码质量 60%+</text>
+  </g>
+  
+  <!-- 场景 3: 学习成长 -->
+  <g transform="translate(800, 160)">
+    <rect width="320" height="280" fill="rgba(255,255,255,0.03)" rx="20" stroke="rgba(255,149,0,0.2)" stroke-width="1.5"/>
+    <circle cx="160" cy="60" r="35" fill="url(#sceneGrad)" opacity="0.15"/>
+    <text x="160" y="75" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">📚</text>
+    <text x="160" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#F5F7FA" text-anchor="middle">个性化学习</text>
+    <text x="160" y="155" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">根据水平推荐内容</text>
+    <text x="160" y="180" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">实时解答疑问</text>
+    <text x="160" y="205" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">学习路径规划</text>
+    <text x="160" y="240" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">学习效率提升 3 倍</text>
+  </g>
+  
+  <!-- 场景 4: 医疗 AI -->
+  <g transform="translate(200, 480)">
+    <rect width="360" height="260" fill="rgba(255,255,255,0.03)" rx="20" stroke="rgba(0,102,255,0.2)" stroke-width="1.5"/>
+    <circle cx="180" cy="55" r="35" fill="url(#sceneGrad)" opacity="0.15"/>
+    <text x="180" y="70" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">🏥</text>
+    <text x="180" y="115" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#F5F7FA" text-anchor="middle">医疗软件 AI 开发</text>
+    <text x="180" y="150" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">POCT 设备智能化</text>
+    <text x="180" y="175" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">医疗数据分析</text>
+    <text x="180" y="200" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">AI 辅助诊断系统</text>
+    <text x="180" y="235" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">专注医疗行业 AI 应用</text>
+  </g>
+  
+  <!-- 场景 5: 嵌入式 AI -->
+  <g transform="translate(640, 480)">
+    <rect width="360" height="260" fill="rgba(255,255,255,0.03)" rx="20" stroke="rgba(123,44,255,0.2)" stroke-width="1.5"/>
+    <circle cx="180" cy="55" r="35" fill="url(#sceneGrad)" opacity="0.15"/>
+    <text x="180" y="70" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">🔌</text>
+    <text x="180" y="115" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#F5F7FA" text-anchor="middle">嵌入式 AI 部署</text>
+    <text x="180" y="150" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">STM32 平台支持</text>
+    <text x="180" y="175" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">NPU 模型优化</text>
+    <text x="180" y="200" font-family="Arial, sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">边缘计算方案</text>
+    <text x="180" y="235" font-family="Arial, sans-serif" font-size="13" fill="#718096" text-anchor="middle">Android + 嵌入式双支持</text>
+  </g>
+  
+  <!-- 底部标语 -->
+  <text x="600" y="780" font-family="Arial, sans-serif" font-size="20" fill="#A0AEC0" text-anchor="middle" letter-spacing="2">让每个开发者都拥有 AI 超能力</text>
+</svg>
